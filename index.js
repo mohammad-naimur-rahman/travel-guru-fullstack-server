@@ -1,6 +1,5 @@
 const express = require('express');
 const cors = require('cors');
-const port = 5000;
 const fs = require('fs-extra');
 const fileUpload = require('express-fileupload');
 
@@ -10,9 +9,10 @@ app.use(express.json());
 app.use(cors());
 app.use(fileUpload());
 require('dotenv').config();
+const port = 5000;
 
-const ObjectID = require('mongodb').ObjectID;
 const MongoClient = require('mongodb').MongoClient;
+const ObjectID = require('mongodb').ObjectID;
 const uri = process.env.DB_URI;
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 
