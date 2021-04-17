@@ -131,4 +131,4 @@ app.get('/', (req, res) => {
     res.send('Hello duniya');
 })
 
-app.listen(process.env.port || port);
+app.listen(process.env.PORT || port);
