@@ -16,5 +16,9 @@
 ```bash
 git clone https://github.com/mohammad-naimur-rahman/travel-guru-fullstack-server.git
 ```
-2. give credential to `.env`
-3. Run the server at port `http://localhost:5000`
+2. Instal the dependencies
+```bash
+npm install
+```
+4. give credential to `.env`
+5. Run the server at port `http://localhost:5000`
